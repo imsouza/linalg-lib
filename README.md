@@ -42,6 +42,7 @@ Check for memory leaks:
 	- [x] Matrix subtraction
 	- [x] Matrix multiplication
 	- [x] Gauss Elimination
+	- [x] Transpose
 	- [ ] LaPlace Expansion
 	- [ ] Eigenvalues
 	- [ ] Eigenvectors
