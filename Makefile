@@ -9,7 +9,7 @@ CC			=	gcc
 LIBS		=	-lm
  
 C_FLAGS =		-Wall	\
-						-O0		\
+						-O2		\
 						-Werror		\
 						-std=c11	\
 						-Wextra		\
@@ -31,5 +31,8 @@ all: $(OBJS)
 clean:
 	rm -rf $(OBJS) $(PROJECT)
 
-run: linalg
-	./linalg
+run: $(PROJECT)
+	./$(PROJECT)
+
+memtest: $(PROJECT)
+	valgrind --tool=memcheck --leak-check=full ./$(PROJECT)

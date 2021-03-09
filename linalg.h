@@ -3,14 +3,17 @@
 
 typedef struct matrix Matrix;
 
-Matrix *createMatrix (int lin, int col);
-double accessMatrix (Matrix *base, int i, int j);
-void insertMatrix (Matrix *base, int i, int j, double arr);
-void displayMatrix (Matrix *base);
-int getLines (Matrix *base);
-int getColumns (Matrix *base);
-void gaussElimination (Matrix *base);
-double gaussSolutionSet (Matrix *base);
-void freeMatrix (Matrix *base);
-
+Matrix *createMatrix (int row, int col);
+double accessMatrix (Matrix *m, int i, int j);
+void insertMatrix (Matrix *m, int i, int j, double v);
+void displayMatrix (Matrix *m);
+void displaySolutionSet(Matrix *m);
+int getRows(Matrix *m);
+int getColumns(Matrix *m);
+Matrix *gaussElimination(Matrix *m);
+Matrix *multiply (Matrix *a, Matrix *b);
+Matrix *sum (Matrix *a, Matrix *b);
+Matrix *sub (Matrix *a, Matrix *b);
+Matrix *transpose (Matrix *m);
+void freeMatrix(Matrix *m);
 #endif
