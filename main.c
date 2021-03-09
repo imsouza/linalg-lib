@@ -20,7 +20,7 @@ int main (int argc, char const *argv[]) {
   insertMatrix(r, 2, 2, 2);
   insertMatrix(r, 2, 3, 4);
 
-  Matrix *resG = gaussElimination(r);
+  Matrix *resG = gaussianElimination(r);
   displayMatrix(resG);
   displaySolutionSet(resG);
   freeMatrix(resG);

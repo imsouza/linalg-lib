@@ -33,7 +33,7 @@ gcc <file.c> linalg.c -o exec
 
 Check for memory leaks:
 
-```$ make valgrind```
+```$ make memtest```
 
 ## TODO
 
@@ -41,9 +41,9 @@ Check for memory leaks:
 	- [x] Matrix addition
 	- [x] Matrix subtraction
 	- [x] Matrix multiplication
-	- [x] Gauss Elimination
+	- [x] Gaussian elimination
 	- [x] Transpose
-	- [ ] LaPlace Expansion
+	- [ ] Laplace expansion
 	- [ ] Eigenvalues
 	- [ ] Eigenvectors
 	- [ ] Diagonalization

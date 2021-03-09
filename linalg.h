@@ -10,7 +10,7 @@ void displayMatrix (Matrix *m);
 void displaySolutionSet(Matrix *m);
 int getRows(Matrix *m);
 int getColumns(Matrix *m);
-Matrix *gaussElimination(Matrix *m);
+Matrix *gaussianElimination(Matrix *m);
 Matrix *multiply (Matrix *a, Matrix *b);
 Matrix *sum (Matrix *a, Matrix *b);
 Matrix *sub (Matrix *a, Matrix *b);

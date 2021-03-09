@@ -116,7 +116,7 @@ displaySolutionSet (Matrix *m) {
 
 
 Matrix 
-*gaussElimination (Matrix *m) {
+*gaussianElimination (Matrix *m) {
   double elementarOperation = 0;
 
   const int row = getRows(m);
