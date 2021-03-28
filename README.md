@@ -2,15 +2,6 @@
 
 A Linear Algebra library for C programs
 
-## Table of contents
-
-- [Usage](#usage)
-- [Run](#run)
-- [Test](#test)
-- [Todo](#todo)
-- [License](#license)
-
-
 ## Usage
 
 ```
