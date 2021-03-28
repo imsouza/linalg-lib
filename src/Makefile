@@ -34,5 +34,5 @@ clean:
 run: $(PROJECT)
 	./$(PROJECT)
 
-memtest: $(PROJECT)
+memcheck: $(PROJECT)
 	valgrind --tool=memcheck --leak-check=full ./$(PROJECT)

@@ -31,9 +31,9 @@ gcc <file.c> linalg.c -o exec
 
 ```$ make && make run```
 
-Check for memory leaks:
+Valgrind:
 
-```$ make memtest```
+```$ make memcheck```
 
 ## TODO
 
@@ -53,9 +53,8 @@ Check for memory leaks:
 
 - Extra
   - [x] Configure preprocessor directives
-  - [ ] Document all the code
-  - [ ] Generate doxygen documentation
   - [x] Successfully passed the tests
+  - [x] Fix memory leaks
 
 ## Author
 
