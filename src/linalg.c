@@ -114,7 +114,6 @@ displaySolutionSet (Matrix *m) {
 }
 
 
-
 Matrix 
 *gaussianElimination (Matrix *m) {
   double elementarOperation = 0;
@@ -233,6 +232,50 @@ Matrix
   }
 
   return T;
+}
+
+
+double
+laplaceExpansion (Matrix *m, int max) {
+  double cofactor = 0, det = 0;
+
+  Matrix *subMatrix = createMatrix(getRows(m), getColumns(m));
+
+  if (max == 1) {
+    det = m->v[0][0];
+  } 
+
+  if (max == 2) {
+    det = m->v[0][0] * m->v[1][1] - m->v[0][1] * m->v[1][0];
+  }
+
+  else {
+   for (int i = 0; i < max; i++) {
+      if (m->v[0][i] != 0) {
+        int subRow = 0;
+        int subCol = 0; 
+        for(int row = 1; row < max; row++) {
+          for(int col = 0; col < max; col++) {
+            if(col != i) {
+              subMatrix->v[subRow][subCol] = m->v[row][col];
+              subCol++;
+            }
+          }
+
+          subRow++;
+          subCol = 0;
+        }
+
+        cofactor = (i % 2 == 0) ? m->v[0][i] : -m->v[0][i];
+        det += cofactor * laplaceExpansion(subMatrix, max - 1);
+      }
+    }
+  }
+
+  freeMatrix(subMatrix);
+  subMatrix = NULL;
+
+  return det;
 }
 
 

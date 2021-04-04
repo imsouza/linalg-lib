@@ -142,6 +142,25 @@ int main (int argc, char const *argv[]) {
 
   freeMatrix(t);
   freeMatrix(resT);
+
+
+  printf("\nLaplace expansion:\n\n");
+
+  Matrix *l = createMatrix(3, 3);
+  insertMatrix(l, 0, 0, 2);
+  insertMatrix(l, 0, 1, 1);
+  insertMatrix(l, 0, 2, 2);
+  insertMatrix(l, 1, 0, -3);
+  insertMatrix(l, 1, 1, 2);
+  insertMatrix(l, 1, 2, 1);
+  insertMatrix(l, 2, 0, 1);
+  insertMatrix(l, 2, 1, -1);
+  insertMatrix(l, 2, 2, 0);
+
+  displayMatrix(l);
+  printf("\ndet = %3.2lf\n", laplaceExpansion(l, 3));
+
+  freeMatrix(l);
   
   return 0;
 }
