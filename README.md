@@ -34,7 +34,7 @@ Valgrind:
 	- [x] Matrix multiplication
 	- [x] Gaussian elimination
 	- [x] Transpose
-	- [ ] Laplace expansion
+	- [x] Laplace expansion
 	- [ ] Eigenvalues
 	- [ ] Eigenvectors
 	- [ ] Diagonalization
