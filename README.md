@@ -14,10 +14,6 @@ int main () {
 }
 ```
 
-## Run
-
-gcc <file.c> linalg.c -o exec
-
 # Test
 
 ```$ make && make run```
