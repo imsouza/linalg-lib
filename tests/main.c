@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "linalg.h"
+#include "../src/linalg.h"
 
 int main (int argc, char const *argv[]) {
   printf("Gauss Elimination:\n\n");
@@ -158,7 +158,7 @@ int main (int argc, char const *argv[]) {
   insertMatrix(l, 2, 2, 0);
 
   displayMatrix(l);
-  printf("\ndet = %3.2lf\n", laplaceExpansion(l, 3));
+  printf("\nDet = %3.2lf\n", laplaceExpansion(l, 3));
 
   freeMatrix(l);
   
