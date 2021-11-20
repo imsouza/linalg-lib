@@ -14,9 +14,9 @@ int main () {
 }
 ```
 
-## Demonstrations
+## Tests
 
-All demos are in the [main file](https://github.com/imsouza/linalg-lib/blob/main/tests/main.c).
+All tests are in the [main file](https://github.com/imsouza/linalg-lib/blob/main/tests/main.c).
 
 ## TODO
 
